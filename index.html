@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Адаптив изображений</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="content">
+            <section class="text">
+                <h2 class="text__title title">В тексте</h2>
+                <div class="text__image">
+                    <picture>
+                        <source srcset="img/1300x400.jpg" type="image/jpeg" media="(min-width:1330px)">
+                        <source srcset="img/800x400.jpg" type="image/jpeg" media="(min-width:992px)">
+                        <source srcset="img/400x600.jpg" type="image/jpeg" media="(max-width:992px)">
+                        <img src="img/1300x400.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="text__value">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem delectus expedita
+                        explicabo
+                        facilis ipsum iure necessitatibus nemo nihil non pariatur quam qui, repudiandae saepe similique
+                        suscipit veritatis! Animi aspernatur aut consectetur, cupiditate deserunt doloribus ducimus,
+                        fugit
+                        incidunt ipsam perspiciatis quae saepe similique, tempora! Cupiditate ea impedit odio
+                        perferendis quam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, vel?</p>
+                </div>
+                <div class="text__image">
+                    <img src="img/1300x400.jpg" alt="">
+                </div>
+                <div class="text__value">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur deleniti dicta
+                        dignissimos ducimus eaque id iure magnam, nisi, pariatur placeat quidem recusandae reprehenderit
+                        tempore vel vero voluptates! Animi, blanditiis ipsam magnam magni molestias nisi porro quam rem
+                        sint
+                        soluta. Accusamus, alias amet architecto at cumque delectus dolorum eius eum exercitationem
+                        explicabo fugit iusto nostrum porro quisquam quo reprehenderit repudiandae, rerum tempore
+                        tenetur
+                        veritatis.</p>
+                    <p>Explicabo perspiciatis possimus quasi sit. Aliquam amet aspernatur commodi dolores,
+                        excepturi, fugit harum illum incidunt, laborum libero neque numquam odio omnis possimus
+                        praesentium
+                        sapiente temporibus unde ut vitae voluptatum. Consequatur dolorem error et ex, nam
+                        voluptatum?</p>
+                </div>
+            </section>
+            <section class="vcards">
+                <h2 class="vcards__title title">В карточках (колонки)</h2>
+                <div class="vcards__row">
+                    <div class="vcards__column">
+                        <div class="vcards__content">
+                            <div class="vcards__image">
+                                <img src="img/800x400.jpg" alt="">
+                            </div>
+                            <div class="vcards__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque est et excepturi
+                                    fugit
+                                    illo inventore maiores minus, natus porro quam ratione reprehenderit sit veritatis
+                                    voluptate.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur,
+                                    voluptatum!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vcards__column">
+                        <div class="vcards__content">
+                            <div class="vcards__image">
+                                <img src="img/400x600.jpg" alt="">
+                            </div>
+                            <div class="vcards__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam consectetur dolores
+                                dolorum ex molestiae non officiis optio? Atque commodi cumque, debitis dolore, illum
+                                natus necessitatibus nemo, pariatur quo recusandae suscipit veniam voluptate voluptatem.
+                                Commodi deleniti illo itaque laboriosam maiores officia sed voluptates? Beatae, tenetur.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vcards__column">
+                        <div class="vcards__content">
+                            <div class="vcards__image">
+                                <img src="img/1300x200.jpg" alt="">
+                            </div>
+                            <div class="vcards__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur impedit, optio
+                                sapiente sed sequi? Accusamus, aperiam cupiditate delectus error esse et iste, nobis
+                                    nostrum provident qui rem soluta unde.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gcards">
+                <h2 class="gcards__title title">В карточках (в ряд)</h2>
+                <div class="gcards__item">
+                    <div class="gcards__image">
+                        <img src="img/1300x200.jpg" alt="">
+                    </div>
+                    <div class="gcards__body">
+                        <div class="gcards__label">Заголовок</div>
+                        <div class="gcards__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                                deleniti dolore nihil repellendus. Blanditiis, officiis.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gcards__item">
+                    <div class="gcards__image">
+                        <img src="img/800x400.jpg" alt="">
+                    </div>
+                    <div class="gcards__body">
+                        <div class="gcards__label">Заголовок</div>
+                        <div class="gcards__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                            deleniti dolore nihil repellendus. Blanditiis,Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Laborum, quibusdam.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, voluptate?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gcards__item">
+                    <div class="gcards__image">
+                        <img src="img/400x600.jpg" alt="">
+                    </div>
+                    <div class="gcards__body">
+                        <div class="gcards__label">Заголовок</div>
+                        <div class="gcards__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                            deleniti dolore nihil repellendus. Blanditiis, Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Ad aspernatur fugiat rem.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+</html>
